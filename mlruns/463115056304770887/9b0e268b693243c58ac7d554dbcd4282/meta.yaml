@@ -1,0 +1,15 @@
+artifact_uri: file:///home/cse/rait_session/mlflow_practice/udemy_mlflow/mlruns/463115056304770887/9b0e268b693243c58ac7d554dbcd4282/artifacts
+end_time: 1728802641962
+entry_point_name: ''
+experiment_id: '463115056304770887'
+lifecycle_stage: active
+run_id: 9b0e268b693243c58ac7d554dbcd4282
+run_name: industrious-ant-65
+run_uuid: 9b0e268b693243c58ac7d554dbcd4282
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728802640370
+status: 3
+tags: []
+user_id: cse
