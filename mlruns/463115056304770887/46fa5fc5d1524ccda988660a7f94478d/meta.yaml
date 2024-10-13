@@ -1,0 +1,15 @@
+artifact_uri: file:///home/cse/rait_session/mlflow_practice/udemy_mlflow/mlruns/463115056304770887/46fa5fc5d1524ccda988660a7f94478d/artifacts
+end_time: 1728801927912
+entry_point_name: ''
+experiment_id: '463115056304770887'
+lifecycle_stage: active
+run_id: 46fa5fc5d1524ccda988660a7f94478d
+run_name: unruly-owl-75
+run_uuid: 46fa5fc5d1524ccda988660a7f94478d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728801926321
+status: 3
+tags: []
+user_id: cse
