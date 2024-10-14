@@ -1,0 +1,15 @@
+artifact_uri: file:///home/cse/rait_session/mlflow_practice/udemy_mlflow/mlruns/119591426143115330/99c2c13facda4694ab687df6b54cf624/artifacts
+end_time: 1728925480110
+entry_point_name: ''
+experiment_id: '119591426143115330'
+lifecycle_stage: active
+run_id: 99c2c13facda4694ab687df6b54cf624
+run_name: sedate-ant-569
+run_uuid: 99c2c13facda4694ab687df6b54cf624
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728925478534
+status: 3
+tags: []
+user_id: cse
