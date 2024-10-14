@@ -1,0 +1,15 @@
+artifact_uri: file:///home/cse/rait_session/mlflow_practice/udemy_mlflow/mlruns/463115056304770887/ac8c319d970c48919097fc5889453ad4/artifacts
+end_time: 1728928126512
+entry_point_name: ''
+experiment_id: '463115056304770887'
+lifecycle_stage: active
+run_id: ac8c319d970c48919097fc5889453ad4
+run_name: righteous-tern-933
+run_uuid: ac8c319d970c48919097fc5889453ad4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728928124906
+status: 3
+tags: []
+user_id: cse

@@ -52,20 +52,17 @@ if __name__ == "__main__":
 
     mlflow.set_tracking_uri("")
     print("The set tracking uri is ", mlflow.get_tracking_uri())
-    exp_id = mlflow.create_experiment(
-        "exp_for_artifact",
-        tags={"version": "v1", "priority": "p1"},
-        artifact_location=Path.cwd().joinpath("myartifacts").as_uri())
-    print(exp_id)
+    exp= mlflow.set_experiment("experiment_1")
+    # print(exp_id)
 
-    get_exp = mlflow.get_experiment(exp_id)
-    print("Name: ", get_exp.name)
-    print("Exp ID: ", get_exp.experiment_id)
-    print("Artifact Location: ", get_exp.artifact_location)
-    print("Tags: ", get_exp.tags)
-    print("LifeCycle Stage: ", get_exp.lifecycle_stage)
-    print("Creation Time: ", get_exp.creation_time)
-    with mlflow.start_run(experiment_id=exp_id):
+    # get_exp = mlflow.get_experiment(exp_id)
+    print("Name: ", exp.name)
+    print("Exp ID: ", exp.experiment_id)
+    print("Artifact Location: ", exp.artifact_location)
+    print("Tags: ", exp.tags)
+    print("LifeCycle Stage: ", exp.lifecycle_stage)
+    print("Creation Time: ", exp.creation_time)
+    with mlflow.start_run(experiment_id=exp.experiment_id):
 
         lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
         lr.fit(train_x, train_y)
