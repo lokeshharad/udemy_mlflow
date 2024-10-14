@@ -13,6 +13,7 @@ from sklearn.model_selection import train_test_split
 
 import mlflow
 import mlflow.sklearn
+from pathlib import Path
 
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
@@ -51,7 +52,10 @@ if __name__ == "__main__":
 
     mlflow.set_tracking_uri("")
     print("The set tracking uri is ", mlflow.get_tracking_uri())
-    exp_id = mlflow.create_experiment("exp_create_exp", tags={"version": "v1", "priority": "p1"})
+    exp_id = mlflow.create_experiment(
+        "exp_for_artifact",
+        tags={"version": "v1", "priority": "p1"},
+        artifact_location=Path.cwd().joinpath("myartifacts").as_uri())
     print(exp_id)
 
     get_exp = mlflow.get_experiment(exp_id)

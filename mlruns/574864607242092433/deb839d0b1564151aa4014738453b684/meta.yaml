@@ -1,0 +1,15 @@
+artifact_uri: file:///home/cse/rait_session/mlflow_practice/udemy_mlflow/myartifacts/deb839d0b1564151aa4014738453b684/artifacts
+end_time: 1728926480863
+entry_point_name: ''
+experiment_id: '574864607242092433'
+lifecycle_stage: active
+run_id: deb839d0b1564151aa4014738453b684
+run_name: shivering-goat-464
+run_uuid: deb839d0b1564151aa4014738453b684
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728926479285
+status: 3
+tags: []
+user_id: cse
