@@ -52,7 +52,7 @@ if __name__ == "__main__":
 
     mlflow.set_tracking_uri("")
     print("The set tracking uri is ", mlflow.get_tracking_uri())
-    exp= mlflow.set_experiment("experiment_1")
+    exp= mlflow.set_experiment("experiment_2")
     # print(exp_id)
 
     # get_exp = mlflow.get_experiment(exp_id)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     print("Tags: ", exp.tags)
     print("LifeCycle Stage: ", exp.lifecycle_stage)
     print("Creation Time: ", exp.creation_time)
-    with mlflow.start_run(experiment_id=exp.experiment_id):
+    with mlflow.start_run(experiment_id=exp.experiment_id, run_name="run_1"):
 
         lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
         lr.fit(train_x, train_y)
