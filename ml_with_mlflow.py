@@ -62,8 +62,8 @@ if __name__ == "__main__":
     print("Tags: ", exp.tags)
     print("LifeCycle Stage: ", exp.lifecycle_stage)
     print("Creation Time: ", exp.creation_time)
-    # with mlflow.start_run(experiment_id=exp.experiment_id, run_name="run_1"):
-    mlflow.start_run(run_id="624949e90cf14c958408a2bc884b9782")
+    mlflow.start_run(experiment_id=exp.experiment_id, run_name="run_2")
+    # mlflow.start_run(run_id="624949e90cf14c958408a2bc884b9782")
 
     lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
     lr.fit(train_x, train_y)
@@ -76,12 +76,19 @@ if __name__ == "__main__":
     print("mae: ", mae)
     print("r2: ", r2)
 
-    mlflow.log_param("alpha", alpha)
-    mlflow.log_param("l1_ratio", l1_ratio)
-    mlflow.log_metric("rmse", rmse)
-    mlflow.log_metric("mae", mae)
-    mlflow.log_metric("r2", r2)
-    mlflow.sklearn.log_model(lr, "wine_quality_new_model_1")
+    params = {
+        "alpha": alpha,
+        "l1_ratio": l1_ratio
+    }
+    metrics_d = {
+        "rmse": rmse,
+        "mae": mae,
+        "r2": r2
+    }
+    mlflow.log_params(params)
+    mlflow.log_metrics(metrics_d)
+
+    mlflow.sklearn.log_model(lr, "wine_quality_new_model_2")
 
     run_obj = mlflow.active_run()
     print("Current Active run id: ", run_obj.info.run_id)

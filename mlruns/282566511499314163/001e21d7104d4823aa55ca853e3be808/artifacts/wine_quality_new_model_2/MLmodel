@@ -1,4 +1,4 @@
-artifact_path: wine_quality_new_model_1
+artifact_path: wine_quality_new_model_2
 flavors:
   python_function:
     env:
@@ -15,6 +15,6 @@ flavors:
     sklearn_version: 1.5.2
 mlflow_version: 2.16.2
 model_size_bytes: 860
-model_uuid: c99dc6520f6c4f7d97c362045e08abc5
-run_id: 624949e90cf14c958408a2bc884b9782
-utc_time_created: '2024-11-05 17:04:17.865196'
+model_uuid: d719cf4a2e8b42aba0f814aa986bea16
+run_id: 001e21d7104d4823aa55ca853e3be808
+utc_time_created: '2024-11-05 17:06:41.714917'
