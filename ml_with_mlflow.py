@@ -82,4 +82,13 @@ if __name__ == "__main__":
     mlflow.log_metric("mae", mae)
     mlflow.log_metric("r2", r2)
     mlflow.sklearn.log_model(lr, "wine_quality_new_model_1")
+
+    run_obj = mlflow.active_run()
+    print("Current Active run id: ", run_obj.info.run_id)
+    print("Current Active run name: ", run_obj.info.run_name)
+
     mlflow.end_run()
+
+    last_run_obj = mlflow.last_active_run()
+    print("Active run id: ", last_run_obj.info.run_id)
+    print("Active run name: ", last_run_obj.info.run_name)
